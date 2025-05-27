@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
-<meta name="author" content="Translated to Zarr by Max Jones, NetCDF CF conventions by Brian&#160;Eaton, Jonathan&#160;Gregory, Bob&#160;Drach, Karl&#160;Taylor, Steve&#160;Hankin, John&#160;Caron, Rich&#160;Signell, Phil&#160;Bentley, Greg&#160;Rappa, Heinke&#160;Höck, Alison&#160;Pamment, Martin&#160;Juckes, Martin&#160;Raspaud, Randy&#160;Horne, Jon&#160;Blower, Timothy&#160;Whiteaker, David&#160;Blodgett, Charlie&#160;Zender, Daniel&#160;Lee, David&#160;Hassell, Alan&#160;D.&#160;Snow, Tobias&#160;Kölling, Dave&#160;Allured, Aleksandar&#160;Jelenak, Anders&#160;Meier&#160;Soerensen, Lucile&#160;Gaultier, Sylvain&#160;Herlédan, Fernando&#160;Manzano, Lars&#160;Bärring, Christopher&#160;Barker, Sadie&#160;Bartholomew">
+<meta name="author" content="Translated for Zarr by Max Jones, NetCDF CF conventions by Brian&#160;Eaton, Jonathan&#160;Gregory, Bob&#160;Drach, Karl&#160;Taylor, Steve&#160;Hankin, John&#160;Caron, Rich&#160;Signell, Phil&#160;Bentley, Greg&#160;Rappa, Heinke&#160;Höck, Alison&#160;Pamment, Martin&#160;Juckes, Martin&#160;Raspaud, Randy&#160;Horne, Jon&#160;Blower, Timothy&#160;Whiteaker, David&#160;Blodgett, Charlie&#160;Zender, Daniel&#160;Lee, David&#160;Hassell, Alan&#160;D.&#160;Snow, Tobias&#160;Kölling, Dave&#160;Allured, Aleksandar&#160;Jelenak, Anders&#160;Meier&#160;Soerensen, Lucile&#160;Gaultier, Sylvain&#160;Herlédan, Fernando&#160;Manzano, Lars&#160;Bärring, Christopher&#160;Barker, Sadie&#160;Bartholomew">
 <title>Zarr Climate and Forecast (CF) Metadata Conventions</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -439,7 +439,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>Zarr Climate and Forecast (CF) Metadata Conventions</h1>
 <div class="details">
-<span id="author" class="author">Translated to Zarr by Max Jones</span><br>
+<span id="author" class="author">Translated for Zarr by Max Jones</span><br>
 <span id="author2" class="author">NetCDF CF conventions by Brian&#160;Eaton</span><br>
 <span id="author3" class="author">Jonathan&#160;Gregory</span><br>
 <span id="author4" class="author">Bob&#160;Drach</span><br>
@@ -1052,12 +1052,12 @@ I.1. <a href="#cdl-domain-anc-coordinate">A single CF-netCDF variable correspond
 <h2 id="_abstract"><a class="anchor" href="#_abstract"></a>Abstract</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This document describes the CF conventions for climate and forecast metadata designed to promote the processing and sharing of files created with the netCDF Application Programmer Interface <a href="#NetCDF">[NetCDF]</a>.
+<p>This document describes the CF conventions for climate and forecast metadata designed to promote the processing and sharing of data that conforms to the <a href="#Zarr">[Zarr]</a> specification.
 The conventions define metadata that provide a definitive description of what the data in each variable represents, and of the spatial and temporal properties of the data.
 This enables users of data from different sources to decide which quantities are comparable, and facilitates building applications with powerful extraction, regridding, and display capabilities.</p>
 </div>
 <div class="paragraph">
-<p>The CF conventions generalize and extend the COARDS conventions <a href="#COARDS">[COARDS]</a>.
+<p>The Zarr CF conventions have been translated for Zarr compliant from the <a href="#NetCDF">[NetCDF]</a> CF conventions, which generalize and extend the COARDS conventions <a href="#COARDS">[COARDS]</a>.
 The extensions include metadata that provides a precise definition of each variable via specification of a standard name, describes the vertical locations corresponding to dimensionless vertical coordinate values, and provides the spatial coordinates of non-rectilinear gridded data.
 Since climate and forecast data are often not simply representative of points in space/time, other extensions provide for the description of coordinate intervals, multidimensional cells and climatological time coordinates, and indicate how a data value is representative of an interval or cell.
 This standard also relaxes the COARDS constraints on dimension order and specifies methods for reducing the size of datasets.</p>
@@ -12876,7 +12876,7 @@ OGC document 12-063. 1st May 2015.</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.12 draft<br>
-Last updated 2025-05-26 19:27:46 -0400
+Last updated 2025-05-26 20:04:13 -0400
 </div>
 </div>
 </body>
