@@ -1157,12 +1157,12 @@ To avoid confusion with coordinate arrays, CF does not permit a one-dimensional 
 </dd>
 <dt class="hdlist1">grid mapping array</dt>
 <dd>
-<p>A array used as a container for attributes that define a specific grid mapping.
+<p>An array used as a container for attributes that define a specific grid mapping.
 The type of the array is arbitrary since it contains no data.</p>
 </dd>
 <dt class="hdlist1">interpolation array</dt>
 <dd>
-<p>A array used as a container for attributes that define a specific interpolation method for uncompressing tie point arrays.
+<p>An array used as a container for attributes that define a specific interpolation method for uncompressing tie point arrays.
 The type of the array is arbitrary since it contains no data.</p>
 </dd>
 <dt class="hdlist1">latitude dimension</dt>
@@ -1223,7 +1223,7 @@ Depending on context, it may be functionally equivalent either to a size-one coo
 </dd>
 <dt class="hdlist1">tie point array</dt>
 <dd>
-<p>An array ble that contains coordinates that have been compressed by sampling.
+<p>An array that contains coordinates that have been compressed by sampling.
 There is no relationship between the name of a tie point array and the name(s) of its dimension(s).</p>
 </dd>
 <dt class="hdlist1">time dimension</dt>
@@ -1250,14 +1250,14 @@ There is no relationship between the name of a tie point array and the name(s) o
 <div class="paragraph">
 <p>No array or dimension names are standardized by this convention.
 Instead we follow the lead of the <a href="#NUG">[NUG]</a> and standardize only the names of attributes and some of the values taken by those attributes.
-TODO: evaluate -
-    Array or dimension names can either be a single array name or a path to an array.
-The overview provided in this section will be followed with more complete descriptions in following sections.
+Array or dimension names can either be a single array name or a path to an array.</p>
+</div>
+<div class="paragraph">
+<p>The overview provided in this section will be followed with more complete descriptions in following sections.
 <a href="#attribute-appendix">Appendix A, Attributes</a> contains a summary of all the attributes used in this convention.</p>
 </div>
 <div class="paragraph">
-<p>TODO: Update for GeoZarr conformance class registration system -
-    Files using this version of the CF Conventions must set the <a href="#NUG">[NUG]</a> defined attribute <strong><code>Conventions</code></strong> to contain the string value "<strong><code>CF-1.12-draft</code></strong>" to identify datasets that conform to these conventions.</p>
+<p>Files using this version of the CF Conventions must set the <a href="#NUG">[NUG]</a> defined attribute <strong><code>Conventions</code></strong> to contain the string value "<strong><code>CF-1.12-draft</code></strong>" to identify datasets that conform to these conventions.</p>
 </div>
 <div class="paragraph">
 <p>The general description of a Zarr store&#8217;s contents should be contained in the following attributes: <strong><code>title</code></strong>, <strong><code>history</code></strong>, <strong><code>institution</code></strong>, <strong><code>source</code></strong>, <strong><code>comment</code></strong> and <strong><code>references</code></strong> (<a href="#description-of-file-contents">Section 2.6.2, "Description of file contents"</a>).
@@ -1484,9 +1484,7 @@ See <a href="#attribute-appendix">Appendix A, Attributes</a> for a list of attri
 <div class="sect3">
 <h4 id="identification-of-conventions"><a class="anchor" href="#identification-of-conventions"></a>2.6.1. Identification of Conventions</h4>
 <div class="paragraph">
-<p>\\TODO: Check how this aligns to the Zarr extension mechanism or GeoZarr conformance class registration system.
-Files that follow this version of the CF Conventions must indicate this by setting the <a href="#NUG">[NUG]</a> defined global attribute <strong><code>Conventions</code></strong> to a string value that contains "<strong><code>CF-1.12-draft</code></strong>".
-\\TODO: Update link to GeoZarr CF conformance class.
+<p>Files that follow this version of the CF Conventions must indicate this by setting the <a href="#NUG">[NUG]</a> defined global attribute <strong><code>Conventions</code></strong> to a string value that contains "<strong><code>CF-1.12-draft</code></strong>".
 The Conventions version number contained in that string can be used to find the web based versions of this document are from the <a href="https://cfconventions.org/">netCDF Conventions web page</a>.
 Subsequent versions of the CF Conventions will not make invalid a compliant usage of this or earlier versions of the CF terms and forms.</p>
 </div>
@@ -3070,7 +3068,7 @@ This is the only method of associating dimensions with coordinates that is suppo
 The value of the <strong><code>coordinates</code></strong> attribute is <em>a blank separated list of the names of auxiliary coordinate arrays</em>.
 There is no restriction on the order in which the auxiliary coordinate arrays appear in the <strong><code>coordinates</code></strong> attribute string.
 The dimensions of an auxiliary coordinate array must be a subset of the dimensions of the array with which the coordinate is associated, with three exceptions.
-First, string-valued coordinates (<a href="#labels">Section 6.1, "Labels"</a>) will have a dimension for maximum string length if the coordinate array has a type of <strong><code>char</code></strong> rather than a type of <strong><code>string</code></strong>. //TODO: Check if valid for Zarr
+First, string-valued coordinates (<a href="#labels">Section 6.1, "Labels"</a>) will have a dimension for maximum string length if the coordinate array has a type of <strong><code>char</code></strong> rather than a type of <strong><code>string</code></strong>.
 Second, if an auxiliary coordinate array of a data array that has been compressed by gathering (<a href="#compression-by-gathering">Section 8.2, "Lossless Compression by Gathering"</a>) does not span the compressed dimension, then
 its dimensions may be any subset of the data array&#8217;s uncompressed dimensions, i.e. any of the dimensions of the data array except the compressed dimension, and any of the dimensions
 listed by the <strong><code>compress</code></strong> attribute of the compressed coordinate array.
@@ -12876,7 +12874,7 @@ OGC document 12-063. 1st May 2015.</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.12 draft<br>
-Last updated 2025-05-26 20:04:13 -0400
+Last updated 2025-06-04 10:53:07 -0400
 </div>
 </div>
 </body>
